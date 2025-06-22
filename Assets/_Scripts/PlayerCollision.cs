@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
@@ -46,10 +47,6 @@ public class PlayerCollision : MonoBehaviour
         {
             gameManager.GameOver();
         }
-        // else if (collision.CompareTag("Enemy"))
-        // {
-        //     gameManager.GameOver();
-        // }
         else if (collision.CompareTag("Key"))
         {
             Destroy(collision.gameObject);

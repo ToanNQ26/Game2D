@@ -56,6 +56,7 @@ public class TutorialDialogue : MonoBehaviour
             instructionPanel.SetActive(false);
             isShowing = false;
             Time.timeScale = 1;
+            Destroy(this.gameObject);
         }
     }
 }
